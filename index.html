@@ -1,88 +1,140 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <title>Treinamentos CX</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<title>Treinamentos CX</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&display=swap" rel="stylesheet">
 
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Sora', sans-serif;
-      background: #f1f5f9;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-    }
+<style>
+body {
+  margin: 0;
+  font-family: 'Sora', sans-serif;
+  background: #0f172a;
+  color: white;
+}
 
-    .container {
-      background: white;
-      padding: 40px;
-      border-radius: 16px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-      text-align: center;
-      width: 320px;
-    }
+/* HEADER */
+.header {
+  padding: 20px 40px;
+  font-size: 20px;
+  font-weight: 600;
+}
 
-    h1 {
-      margin-bottom: 10px;
-      color: #0f172a;
-    }
+/* BANNER */
+.banner {
+  height: 300px;
+  background: linear-gradient(to right, rgba(15,23,42,0.9), rgba(15,23,42,0.2)),
+              url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d');
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  padding: 40px;
+}
 
-    p {
-      font-size: 14px;
-      color: #64748b;
-      margin-bottom: 30px;
-    }
+.banner-content {
+  max-width: 400px;
+}
 
-    .card {
-      background: #0f172a;
-      color: white;
-      padding: 16px;
-      border-radius: 10px;
-      margin-bottom: 15px;
-      text-decoration: none;
-      display: block;
-      transition: 0.25s;
-      border: 2px solid transparent;
-    }
+.banner h1 {
+  margin: 0 0 10px;
+}
 
-    .card:hover {
-      background: white;
-      color: #0f172a;
-      border: 2px solid #d4a017;
-      transform: translateY(-4px) scale(1.02);
-    }
+.banner a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 18px;
+  background: #d4a017;
+  color: #0f172a;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+}
 
-    .card span {
-      display: block;
-      font-size: 12px;
-      opacity: 0.7;
-    }
+/* SEÇÃO */
+.section {
+  padding: 20px 40px;
+}
 
-  </style>
+.section h2 {
+  margin-bottom: 10px;
+}
+
+/* CARROSSEL */
+.row {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+}
+
+.row::-webkit-scrollbar {
+  height: 6px;
+}
+
+.row::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 4px;
+}
+
+/* CARD */
+.card {
+  min-width: 180px;
+  height: 110px;
+  background: #1e293b;
+  border-radius: 10px;
+  display: flex;
+  align-items: flex-end;
+  padding: 10px;
+  transition: 0.25s;
+  text-decoration: none;
+  color: white;
+}
+
+.card:hover {
+  transform: scale(1.08);
+  background: #334155;
+}
+
+/* TEXTO */
+.card span {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+</style>
 </head>
 
 <body>
 
-  <div class="container">
-    <h1>Treinamentos CX</h1>
-    <p>Selecione um treinamento para iniciar</p>
+<div class="header">Treinamentos CX</div>
+
+<!-- BANNER -->
+<div class="banner">
+  <div class="banner-content">
+    <h1>Zendesk</h1>
+    <p>Treinamento de atendimento e gestão de tickets</p>
+    <a href="zendesk.html">Acessar treinamento</a>
+  </div>
+</div>
+
+<!-- SEÇÃO -->
+<div class="section">
+  <h2>Treinamentos disponíveis</h2>
+
+  <div class="row">
 
     <a href="zendesk.html" class="card">
-      Zendesk
-      <span>Atendimento e gestão de tickets</span>
+      <span>Zendesk</span>
     </a>
 
     <a href="treinamento-totvs.html" class="card">
-      TOTVS
-      <span>Operação do sistema</span>
+      <span>TOTVS</span>
     </a>
 
   </div>
+</div>
 
 </body>
 </html>
